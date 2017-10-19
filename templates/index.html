@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="{{ url_base }}">
+        <meta charset="utf-8">
+        <title>{{ titulo }}</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="static/js/generatedText.js"></script>
+        <script src="static/js/selch.js"></script>
+        <!-- <script src="static/js/angular.js"></script> -->
+    </head>
+    <body>
+        <div class="main-container">
+            <br>
+            <h1 class="main-title">Avisos fúnebres</h1>
+            <hr>
+            <form>
+                <h3 class="first-text">Por medio de este formulario usted podrá publicar avisos fúnebres en la edición impresa de El Telégrafo y en www.eltelegrafo.com</h3>
+                <div class="two-column">
+                    <div class="first-column">
+                        <p>Tipo de aviso<select id="ad-type"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">Sepelio</option><option value="2">Participación</option></select></p>
+                    </div>
+                    <div class="second-column">
+                        <p>Símbolo</p>
+                        <img src="public/media/cruz.png" class="symbol-rel"><input type="radio" name="rel" id="cruz">
+                        <img src="public/media/estrella-judia.png" class="symbol-rel"><input type="radio" name="rel" id="star">
+                        <img src="public/media/sin-simbolo.png" class="symbol-rel"><input type="radio" name="rel" id="sin-s">
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <h3 class="second-title">Datos del aviso</h3>
+                <h3 class="first-text">Por favor ingrese los datos de su aviso, con mayúsculas/minúsculas, tal como desea que sea publicado. No se aceptan textos todos en mayúscula.</h3>
+                <label>Nombre completo</label><input type="text" id="name-lastname">
+                <label>Deudos</label><textarea name="deudos" id="deudos"></textarea>
+                <div class="two-column">
+                    <div class="first-column">
+                        <label>Fecha de deceso</label><br>
+                        <input type="text" name="date-deceso" id="datepicker"><br>
+                        <label>Casa velatoria</label><br>
+                        <select id="casa-velatoria">
+                            <option value="0" disabled selected hidden>Seleccione opción...</option>
+                            <option value="1">Cochería San José</option>
+                            <option value="2">Cochería Del Norte</option>
+                            <option value="3">Otro</option>
+                        </select><br><br>
+                        <label id="sala-label">Sala</label>
+                        <input type="text" name="sala" id="sala">
+                        <label id="hora-vel-label">Hora velatorio</label>
+                        <input type="time" name="hora-vel" id="hora-vel">
+                    </div>
+                    <div class="second-column">
+                        <label>Cementerio</label><br>
+                        <select id="cementery">
+                            <option value="0" disabled selected hidden>Seleccione opción...</option>
+                            <option value="1">Cementerio Central</option>
+                            <option value="2">Cementerio Nuevo Paysandú</option>
+                            <option value="3">Otro</option>
+                        </select><br><br>
+                        <label>Dirección</label>
+                        <input type="text" name="address" id="address">
+                        <label id="hora-cor-label">Hora de partida</label>
+                        <input type="time" name="hora-cor" id="hora-cor">
+                    </div>
+                </div>
+                <br>
+                <div class="button-generate">
+                    <a id="generate">Generar texto</a>
+                </div>
+                <br>
+                <!-- <label>Aviso completo</label>
+                <textarea name="ad-edit" id="ad-edit"></textarea> -->
+            </form>
+            <hr>
+            <p class="preview">Previsualización del aviso:</p>
+            <div id="final-text">
+                <br>
+                <div id="final-title"></div>
+                <div id="final-content"></div>
+                <br>
+            </div>
+            <br>
+        </div>
+    </body>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+    
+</html>
