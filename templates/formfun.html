@@ -13,7 +13,8 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="static/js/generatedText.js"></script>
-        <script src="static/js/selch.js"></script>
+        <script src="static/js/selchv2.js"></script>
+        <script src="static/js/suggested-text.js"></script>
         <!-- <script src="static/js/angular.js"></script> -->
     </head>
     <body>
@@ -27,21 +28,32 @@
                 <h3 class="first-text">Por medio de este formulario usted podrá publicar avisos fúnebres en la edición impresa de El Telégrafo y en www.eltelegrafo.com</h3>
                 <div class="two-column">
                     <div class="first-column">
-                        <p>Tipo de aviso<select id="ad-type"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">Sepelio</option><option value="2">Participación</option></select></p>
+                        <p>Tipo de aviso<select id="ad-type"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">Una columna - 400 caracteres</option><option value="2">Dos columnas - 520 caracteres</option><option value="3">Tres columnas - 630 caracteres</option></select></p>
+                        <p>Sepelio<select id="ad-type2"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">A realizarse</option><option value="2">Realizado</option></select></p>
                     </div>
                     <div class="second-column">
-                        <p>Símbolo</p>
+                        <p>Símbolo religioso</p>
                         <img src="public/media/cruz.png" class="symbol-rel"><input type="radio" name="rel" id="cruz">
-                        <img src="public/media/estrella-judia.png" class="symbol-rel"><input type="radio" name="rel" id="star">
+                        <img src="public/media/estrella-de-david.png" class="symbol-rel"><input type="radio" name="rel" id="star">
                         <img src="public/media/sin-simbolo.png" class="symbol-rel"><input type="radio" name="rel" id="sin-s">
                     </div>
+                </div>
+                <br>
+                <div class="preview-text" id="preview-text">
+                    <br>
+                    <span class="name-title-sin">Nombre Apellido</span>
+                    <p id="lorem-ipsum-preview">(Q.E.P.D.) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non vulputate est, vitae maximus tortor. Nullam purus est, suscipit at felis ac, dignissim condimentum velit. Donec quis ligula volutpat dui finibus vestibulum at ut quam. Maecenas a fringilla elit. Morbi in risus sed turpis mattis consequat eget eget ex.</p>
                 </div>
                 <br>
                 <hr>
                 <h3 class="second-title">Datos del aviso</h3>
                 <h3 class="first-text">Por favor ingrese los datos de su aviso, con mayúsculas/minúsculas, tal como desea que sea publicado. No se aceptan textos todos en mayúscula.</h3>
                 <label>Nombre completo</label><input type="text" id="name-lastname">
-                <label>Deudos</label><textarea name="deudos" id="deudos"></textarea>
+                <label>Mensaje de condolencias inicial</label><br>
+                <div class="button-suggest"><a class="suggest-b" id="sugg-1">Sugerencia</a></div><textarea name="deudos" id="deudos"></textarea>
+                <label>Quienes participan</label><input type="text" id="parti">
+                <label>Mensaje de condolencias final</label><br>
+                <div class="button-suggest"><a class="suggest-b" id="sugg-2">Sugerencia</a></div><textarea name="deu2" id="deu2"></textarea>
                 <div class="two-column">
                     <div class="first-column">
                         <label>Fecha de deceso</label><br>

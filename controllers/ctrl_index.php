@@ -46,7 +46,7 @@ class IndexController{
 
     function home(){
         $tpl = Template::getInstance();
-        $tpl->mostrar('index.html', array(
+        $tpl->mostrar('formfun.html', array(
                 'url_base' => '/eltelegrafo_funebres_twiguno/',
                 'titulo' => 'Formulario fúnebre'
             ));

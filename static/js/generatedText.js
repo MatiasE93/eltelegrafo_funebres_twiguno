@@ -2,12 +2,15 @@ $(function (){
 
     //Selects
     var ad_type = $('#ad-type'); //Tipo de aviso
+    var ad_type2 = $('#ad-type2'); //Sepelio a realizarse o realizado
     var casa_velatoria = $('#casa-velatoria'); //Casa velatoria
     var cementery = $('#cementery'); //Cementerio
 
     //Datos
     var name = $('#name-lastname'); //Nombre y apellido
-    var deudos = $('#deudos'); //Deudos
+    var deudos = $('#deudos'); //Mensaje de condolencia inicial
+    var parti = $('#parti'); //Participantes
+    var deu2 = $('#deu2'); //Mensaje de condolencia final
     var date_death = $('#datepicker'); //Fecha fallecimiento
     var casa_address = $('#address'); //Dirección de la casa velatoria
 
@@ -227,22 +230,34 @@ $(function (){
                 break;
         }
 
-        if (ad_type.val() == 1){ //Tipo de aviso: Sepelio
+        if (ad_type.val() == 1){
+            document.getElementById('final-text').style.width = "300px";
+        }
+
+        if (ad_type.val() == 2){
+            document.getElementById('final-text').style.width = "500px";
+        }
+
+        if (ad_type.val() == 3){
+            document.getElementById('final-text').style.width = "700px";
+        }
+
+        if (ad_type2.val() == 1){ //Sepelio a realizarse
             if (document.getElementById('cruz').checked){
                 document.getElementById('final-title').innerHTML = '<img src="public/media/cruz.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
                 document.getElementById('final-content').innerHTML = '<p id="ad-complete"></p>';
                 var deathname = $('#death-name');
                 deathname.text(name.val());
                 var complete = $('#ad-complete');
-                complete.text('(Q.E.P.D.) - ' + name.val() + ', falleció el día ' + date_death.val() + '. ' + deudos.val() + ' El velatório se realizará en ' + final_casa.valueOf() + ' dirección ' + casa_address.val() + ', en sala número ' + sala.val() + ' a la hora ' + time_vel.val() + '. El cortejo parte a la hora ' + time_cor.val() + ' hacia el cementerio ' + final_cementery.valueOf() + '.');
+                complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + final_casa.valueOf() + ', dirección ' + casa_address.val() + ', en sala número ' + sala.val() + ' a la hora ' + time_vel.val() + '. El cortejo parte a la hora ' + time_cor.val() + ' hacia el cementerio ' + final_cementery.valueOf() + '.');
             }
             if (document.getElementById('star').checked){
-                document.getElementById('final-title').innerHTML = '<img src="public/media/estrella-judia.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
+                document.getElementById('final-title').innerHTML = '<img src="public/media/estrella-de-david.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
                 document.getElementById('final-content').innerHTML = '<p id="ad-complete"></p>';
                 var deathname = $('#death-name');
                 deathname.text(name.val());
                 var complete = $('#ad-complete');
-                complete.text('(Q.E.P.D.) - ' + name.val() + ', falleció el día ' + date_death.val() + '. ' + deudos.val() + ' El velatório se realizará en ' + final_casa.valueOf() + ' dirección ' + casa_address.val() + ', en sala número ' + sala.val() + ' a la hora ' + time_vel.val() + '. El cortejo parte a la hora ' + time_cor.val() + ' hacia el cementerio ' + final_cementery.valueOf() + '.');
+                complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + final_casa.valueOf() + ', dirección ' + casa_address.val() + ', en sala número ' + sala.val() + ' a la hora ' + time_vel.val() + '. El cortejo parte a la hora ' + time_cor.val() + ' hacia el cementerio ' + final_cementery.valueOf() + '.');
             }
             if (document.getElementById('sin-s').checked){
                 document.getElementById('final-title').innerHTML = '<span class="death-name" id="death-name"></span>';
@@ -250,26 +265,26 @@ $(function (){
                 var deathname = $('#death-name');
                 deathname.text(name.val());
                 var complete = $('#ad-complete');
-                complete.text('(Q.E.P.D.) - ' + name.val() + ', falleció el día ' + date_death.val() + '. ' + deudos.val() + ' El velatório se realizará en ' + final_casa.valueOf() + ' dirección ' + casa_address.val() + ', en sala número ' + sala.val() + ' a la hora ' + time_vel.val() + '. El cortejo parte a la hora ' + time_cor.val() + ' hacia el cementerio ' + final_cementery.valueOf() + '.');
+                complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + final_casa.valueOf() + ', dirección ' + casa_address.val() + ', en sala número ' + sala.val() + ' a la hora ' + time_vel.val() + '. El cortejo parte a la hora ' + time_cor.val() + ' hacia el cementerio ' + final_cementery.valueOf() + '.');
             }
         }
 
-        if (ad_type.val() == 2){ //Tipo de aviso: Participación
+        if (ad_type2.val() == 2){ //Sepelio realizado
             if (document.getElementById('cruz').checked){
                 document.getElementById('final-title').innerHTML = '<img src="public/media/cruz.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
                 document.getElementById('final-content').innerHTML = '<p id="ad-complete"></p>';
                 var deathname = $('#death-name');
                 deathname.text(name.val());
                 var complete = $('#ad-complete');
-                complete.text('(Q.E.P.D.) - ' + name.val() + ', falleció el día ' + date_death.val() + '. ' + deudos.val() + ' El velatório se realizó en ' + final_casa.valueOf() + ' dirección ' + casa_address.val() + '. Familiares y amigos participaron con profundo dolor.');
+                complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + final_casa.valueOf() + ', dirección ' + casa_address.val() + '.');
             }
             if (document.getElementById('star').checked){
-                document.getElementById('final-title').innerHTML = '<img src="public/media/estrella-judia.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
+                document.getElementById('final-title').innerHTML = '<img src="public/media/estrella-de-david.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
                 document.getElementById('final-content').innerHTML = '<p id="ad-complete"></p>';
                 var deathname = $('#death-name');
                 deathname.text(name.val());
                 var complete = $('#ad-complete');
-                complete.text('(Q.E.P.D.) - ' + name.val() + ', falleció el día ' + date_death.val() + '. ' + deudos.val() + ' El velatório se realizó en ' + final_casa.valueOf() + ' dirección ' + casa_address.val() + '. Familiares y amigos participaron con profundo dolor.');
+                complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + final_casa.valueOf() + ', dirección ' + casa_address.val() + '.');
             }
             if (document.getElementById('sin-s').checked){
                 document.getElementById('final-title').innerHTML = '<span class="death-name" id="death-name"></span>';
@@ -277,7 +292,7 @@ $(function (){
                 var deathname = $('#death-name');
                 deathname.text(name.val());
                 var complete = $('#ad-complete');
-                complete.text('(Q.E.P.D.) - ' + name.val() + ', falleció el día ' + date_death.val() + '. ' + deudos.val() + ' El velatório se realizó en ' + final_casa.valueOf() + ' dirección ' + casa_address.val() + '. Familiares y amigos participaron con profundo dolor.');
+                complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + final_casa.valueOf() + ', dirección ' + casa_address.val() + '.');
             }
         }
     })
