@@ -76,6 +76,12 @@ select:invalid { color: gray; }
     font-weight: bold;
 }
 
+.death-name-sin{
+    margin-left: 20px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
 .button-generate{
     text-align: center;
     margin-top: 15px;
@@ -205,4 +211,27 @@ select:invalid { color: gray; }
     margin-left: 10%;
 }
 
+#charResTitle{
+    text-align: center;
+    font-size: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    padding: 0;
+}
+
+#total-Char{
+    text-align: center;
+
+}
+
+.cantChar{
+    position: fixed;
+    left: 100px;
+    top: 20px;
+    height: 80px;
+    width: 150px;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 7px;
+}
 
