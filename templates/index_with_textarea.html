@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="{{ url_base }}">
+        <meta charset="utf-8">
+        <title>{{ titulo }}</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="static/css/noty.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="static/css/style.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" href="static/css/mobile-style.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="static/js/noty.js"></script>
+        <script src="static/js/generatedTextv2.js"></script>
+        <script src="static/js/selch.js"></script>
+        <script src="static/js/suggested-text.js"></script>
+        <!-- <script src="static/js/count.js"></script> -->
+        <!-- <script src="static/js/angular.js"></script> -->
+    </head>
+    <body>
+        <div class="cantChar">
+            <p id="charResTitle">Caracteres restantes:</p>
+            <p id="total-Char">---</p>
+        </div>
+        <div class="main-container">
+            <br>
+            <img id="et-logo" src="public/media/eltelegrafo-logo.png">
+            <br>
+            <h1 class="main-title">Avisos fúnebres</h1>
+            <hr>
+            <form>
+                <h3 class="first-text">Por medio de este formulario usted podrá publicar avisos fúnebres en la edición impresa de El Telégrafo y en www.eltelegrafo.com</h3>
+                <div class="two-column">
+                    <div class="first-column">
+                        <p id="ad-type-avi">Tipo de aviso<select id="ad-type"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">Una columna - 400 caracteres</option><option value="2">Dos columnas - 520 caracteres</option><option value="3">Tres columnas - 630 caracteres</option></select></p>
+                        <p id="ad-type-sep">Sepelio<select id="ad-type2"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">A realizarse</option><option value="2">Realizado</option></select></p>
+                    </div>
+                    <div class="second-column">
+                        <p>Símbolo religioso</p>
+                        <img src="public/media/cruz.png" class="symbol-rel"><input type="radio" name="rel" id="cruz">
+                        <img src="public/media/estrella-de-david.png" class="symbol-rel"><input type="radio" name="rel" id="star">
+                        <img src="public/media/sin-simbolo.png" class="symbol-rel"><input type="radio" name="rel" id="sin-s" checked>
+                    </div>
+                </div>
+                <br>
+                <div class="preview-text" id="preview-text">
+                    <br>
+                    <span class="name-title-sin">Nombre Apellido</span>
+                    <p id="lorem-ipsum-preview">(Q.E.P.D.) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non vulputate est, vitae maximus tortor. Nullam purus est, suscipit at felis ac, dignissim condimentum velit. Donec quis ligula volutpat dui finibus vestibulum at ut quam. Maecenas a fringilla elit. Morbi in risus sed turpis mattis consequat eget eget ex.</p>
+                </div>
+                <input type="text" name="noseen" id="noseen" hidden>
+                <br>
+                <hr>
+                <h3 class="second-title">Datos del aviso</h3>
+                <h3 class="first-text">Por favor ingrese los datos de su aviso, con mayúsculas/minúsculas, tal como desea que sea publicado. No se aceptan textos todos en mayúscula.</h3>
+                <label id="normal-label">Nombre completo</label><input type="text" id="name-lastname">
+                <br>
+                <label id="normal-label">Fecha de deceso</label>
+                <br>
+                <input type="text" name="date-deceso" id="datepicker">
+                <br>
+                <label id="normal-label">Mensaje de condolencias inicial</label>
+                <br>
+                <div class="button-suggest"><a class="suggest-b" id="sugg-1">Sugerencia</a></div><textarea name="deudos" id="deudos"></textarea>
+                <br>
+                <label id="normal-label">Quienes participan</label><input type="text" id="parti">
+                <br>
+                <label id="normal-label">Mensaje de condolencias final</label>
+                <br>
+                <div class="button-suggest"><a class="suggest-b" id="sugg-2">Sugerencia</a></div><textarea name="deu2" id="deu2"></textarea>
+                <br>
+                <label id="normal-label">Datos del sepelio</label>
+                <br>
+                <textarea name="sepel" id="sepel"></textarea>
+                <br>
+                <div class="button-generate">
+                    <a id="generate">Generar texto</a>
+                </div>
+                <br>
+            </form>
+            <hr>
+            <p class="preview">Previsualización del aviso:</p>
+            <div id="final-text">
+                <br>
+                <div id="final-title"></div>
+                <div id="final-content"></div>
+                <br>
+            </div>
+            <br>
+        </div>
+    </body>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+</html>

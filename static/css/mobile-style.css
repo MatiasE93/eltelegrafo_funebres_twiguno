@@ -1,0 +1,334 @@
+body{
+    background-color: #f7f7f7;
+}
+
+h1, h2, h3, h4, h5, p, label, a, span{
+    font-family: sans-serif;
+}
+
+h1.main-title{
+    text-align: center;
+    font-size: 150%;
+}
+
+h3.first-text{
+    margin: 20px;
+    color: grey;
+    font-size: 100%;
+}
+
+h3.second-title{
+    text-align: center;
+}
+
+p, label{
+    margin: 20px;
+}
+
+select{
+    margin-left: 20px;
+    width: 200px;
+}
+
+hr{
+    width: 95%;
+}
+
+textarea, input{
+    border: 2px solid #C8C7C7;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+}
+
+select:invalid { color: gray; }
+
+#et-logo{
+    margin: 0 auto;
+    display: block;
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-container{
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 15px #636363;
+    border-radius: 10px;
+    background-color: white;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .two-column{
+        width: 100%;
+        display: flex;
+    }
+
+    .first-column {
+        width: 50%;
+    } 
+
+    .second-column{
+        width: 50%;
+    }
+
+    .button-generate{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #generate{
+        padding: 15px 25px;
+        color: white;
+        background-color: #2B63B7;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    .button-suggest{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .suggest-b{
+        padding: 10px 20px;
+        color: white;
+        background-color: #2B63B7;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 70%;
+    }
+
+    #normal-label{
+        font-size: 100%;
+    }
+
+    #charResTitle{
+        text-align: center;
+        font-size: 70%;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        padding: 0;
+    }
+
+    #total-Char{
+        text-align: center;
+
+    }
+
+    .cantChar{
+        position: fixed;
+        left: 100px;
+        top: 20px;
+        height: 80px;
+        width: 150px;
+        background-color: white;
+        border: solid 1px gray;
+        border-radius: 7px;
+    }
+}
+
+@media only screen and (max-device-width: 767px){
+    .two-column{
+        width: 100%;
+    }
+
+    .first-column {
+        width: 100%;
+        text-align: center;
+    } 
+
+    .second-column{
+        width: 100%;
+        text-align: center;
+    }
+
+    .button-generate{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #generate{
+        padding: 15px 25px;
+        color: white;
+        background-color: #2B63B7;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: 85%;
+    }
+
+    .button-suggest{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .suggest-b{
+        padding: 10px 20px;
+        color: white;
+        background-color: #2B63B7;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 60%;
+    }
+
+    #normal-label{
+        font-size: 120%;
+    }
+
+    #charResTitle{
+        text-align: center;
+        font-size: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        padding: 0;
+    }
+
+    #total-Char{
+        text-align: center;
+        font-size: 120%;
+    }
+
+    .cantChar{
+        position: fixed;
+        left: 100px;
+        top: 20px;
+        height: 120px;
+        width: 200px;
+        background-color: white;
+        border: solid 1px gray;
+        border-radius: 7px;
+    }
+}
+
+.symbol-rel{
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.symbol-rel-final{
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+    padding-right: 5px;
+}
+
+.death-name{
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.death-name-sin{
+    margin-left: 20px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+#name-lastname, #parti{
+    width: 93%;
+    height: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#deudos, #ad-edit, #deu2, #sepel{
+    width: 93%;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#datepicker{
+    width: 30%;
+    height: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#sala, #hora-vel, #hora-cor{
+    width: 20%;
+    height: 18px;
+    margin-bottom: 20px;
+}
+
+#address{
+    width: 90%;
+    height: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#final-text{
+    width: 80%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f7f7f7;
+}
+
+#preview-text{
+    width: 300px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f7f7f7;
+}
+
+.name-title-con{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.name-title-sin{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.symbol-rel-prev{
+    height: 25px;
+    width: 25px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+#final-title{
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+#final-content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#ad-complete{
+    margin-right: 20px;
+}
+
+.preview{
+    font-style: italic;
+    margin-left: 10%;
+}
+

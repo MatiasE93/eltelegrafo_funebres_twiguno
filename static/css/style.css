@@ -1,3 +1,7 @@
+body{
+    background-color: #f7f7f7;
+}
+
 h1, h2, h3, h4, h5, p, label, a, span{
     font-family: sans-serif;
 }
@@ -31,16 +35,22 @@ hr{
 textarea, input{
     border: 2px solid #C8C7C7;
     border-radius: 6px;
+    background-color: #f7f7f7;
 }
 
 select:invalid { color: gray; }
+
+#et-logo{
+    margin: 0 auto;
+    display: block;
+}
 
 .main-container{
     width: 70%;
     margin: 0 auto;
     box-shadow: 0px 0px 15px #636363;
     border-radius: 10px;
-    background-color: #DDDDDD;
+    background-color: white;
 }
 
 .two-column{
@@ -102,7 +112,7 @@ select:invalid { color: gray; }
     margin-bottom: 20px;
 }
 
-#deudos, #ad-edit, #deu2{
+#deudos, #ad-edit, #deu2, #sepel{
     width: 95%;
     height: 80px;
     margin-left: 20px;
@@ -157,7 +167,7 @@ select:invalid { color: gray; }
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: #f7f7f7;
 }
 
 #preview-text{
@@ -166,7 +176,7 @@ select:invalid { color: gray; }
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: #f7f7f7;
 }
 
 .name-title-con{
@@ -233,5 +243,9 @@ select:invalid { color: gray; }
     background-color: white;
     border: solid 1px gray;
     border-radius: 7px;
+}
+
+#normal-label{
+    font-size: 100%;
 }
 
