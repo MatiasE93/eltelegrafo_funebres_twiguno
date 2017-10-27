@@ -34,13 +34,21 @@
             <hr>
             <form>
                 <h3 class="first-text">Por medio de este formulario usted podrá publicar avisos fúnebres en la edición impresa de El Telégrafo y en www.eltelegrafo.com</h3>
+                <br>
+                <div class="terms"><p class="terms-1">Términos y condiciones:</p>
+                <p class="terms-2">DIARIO EL TELÉGRAFO S.A. en su buena fé se reserva el derecho de corregir, agregar o quitar palabras o frases si lo considera necesario para optimizar el contenido e información de este aviso y/o evitar que las mismas puedan resultar ofensivas.</p></div>
+                <br>
                 <div class="two-column">
                     <div class="first-column">
-                        <p id="ad-type-avi">Tipo de aviso<select id="ad-type"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">Una columna - 400 caracteres</option><option value="2">Dos columnas - 520 caracteres</option><option value="3">Tres columnas - 630 caracteres</option></select></p>
-                        <p id="ad-type-sep">Sepelio<select id="ad-type2"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">A realizarse</option><option value="2">Realizado</option></select></p>
+                        <br>
+                        <label id="ad-type-avi">Tipo de aviso</label>
+                        <select id="ad-type"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">Una columna - 400 caracteres</option><option value="2">Dos columnas - 520 caracteres</option><option value="3">Tres columnas - 630 caracteres</option></select>
+                        <!-- <p id="ad-type-sep">Sepelio<select id="ad-type2"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">A realizarse</option><option value="2">Realizado</option></select></p> -->
                     </div>
                     <div class="second-column">
-                        <p>Símbolo religioso</p>
+                        <br>
+                        <label>Símbolo religioso</label>
+                        <br>
                         <img src="public/media/cruz.png" class="symbol-rel"><input type="radio" name="rel" id="cruz">
                         <img src="public/media/estrella-de-david.png" class="symbol-rel"><input type="radio" name="rel" id="star">
                         <img src="public/media/sin-simbolo.png" class="symbol-rel"><input type="radio" name="rel" id="sin-s" checked>

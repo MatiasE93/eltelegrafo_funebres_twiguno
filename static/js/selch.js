@@ -209,5 +209,33 @@
         $("#datepicker").on('click', function(){
             document.getElementById('datepicker').style.border = "2px solid #C8C7C7";
         });
+
+        $("#name-lastname").on('click', function(){
+            document.getElementById('name-lastname').style.border = "2px solid #C8C7C7";
+        });
+
+        $("#sugg-1").on('click', function(){
+            document.getElementById('deudos').style.border = "2px solid #C8C7C7";
+        });
+
+        $("#deudos").on('click', function(){
+            document.getElementById('deudos').style.border = "2px solid #C8C7C7";
+        });
+
+        $("#parti").on('click', function(){
+            document.getElementById('parti').style.border = "2px solid #C8C7C7";
+        });
+
+        $("#sugg-2").on('click', function(){
+            document.getElementById('deu2').style.border = "2px solid #C8C7C7";
+        });
+
+        $("#deu2").on('click', function(){
+            document.getElementById('deu2').style.border = "2px solid #C8C7C7";
+        });
+
+        $("#sepel").on('click', function(){
+            document.getElementById('sepel').style.border = "2px solid #C8C7C7";
+        });
     });
 }(this, this.document));

@@ -24,7 +24,6 @@ p, label{
 }
 
 select{
-    margin-left: 20px;
     width: 200px;
 }
 
@@ -110,6 +109,7 @@ select:invalid { color: gray; }
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 #deudos, #ad-edit, #deu2, #sepel{
@@ -247,5 +247,13 @@ select:invalid { color: gray; }
 
 #normal-label{
     font-size: 100%;
+}
+
+.terms{
+    margin: 0 auto;
+    width: 85%;
+    color: white;
+    background-color: #008CBA;
+    padding: 1px;
 }
 

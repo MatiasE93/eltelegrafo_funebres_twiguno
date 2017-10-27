@@ -42,23 +42,23 @@ textarea, input{
 
 select:invalid { color: gray; }
 
-#et-logo{
-    margin: 0 auto;
-    display: block;
-    max-height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.main-container{
-    width: 70%;
-    margin: 0 auto;
-    box-shadow: 0px 0px 15px #636363;
-    border-radius: 10px;
-    background-color: white;
-}
-
 @media only screen and (min-device-width: 768px) {
+    #et-logo{
+        margin: 0 auto;
+        display: block;
+        max-height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main-container{
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 15px #636363;
+        border-radius: 10px;
+        background-color: white;
+    }
+
     .two-column{
         width: 100%;
         display: flex;
@@ -130,9 +130,157 @@ select:invalid { color: gray; }
         border: solid 1px gray;
         border-radius: 7px;
     }
+
+    #name-lastname, #parti{
+        width: 93%;
+        height: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .symbol-rel{
+        height: 25px;
+        width: 25px;
+        margin: 0;
+        padding-right: 5px;
+        padding-left: 10px;
+    }
+
+    .symbol-rel-final{
+        height: 25px;
+        width: 25px;
+        margin-left: 20px;
+        padding-right: 5px;
+    }
+
+    .death-name{
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+    .death-name-sin{
+        margin-left: 20px;
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+    #deudos, #ad-edit, #deu2, #sepel{
+        width: 93%;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #datepicker{
+        width: 30%;
+        height: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #sala, #hora-vel, #hora-cor{
+        width: 20%;
+        height: 18px;
+        margin-bottom: 20px;
+    }
+
+    #address{
+        width: 90%;
+        height: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #final-text{
+        width: 80%;
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f7f7f7;
+    }
+
+    #preview-text{
+        width: 300px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f7f7f7;
+    }
+
+    .name-title-con{
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .name-title-sin{
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .symbol-rel-prev{
+        height: 25px;
+        width: 25px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    #final-title{
+        width: 100%;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #final-content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #ad-complete{
+        margin-right: 20px;
+    }
+
+    .preview{
+        font-style: italic;
+        margin-left: 10%;
+    }
+
+    .terms{
+        margin: 0 auto;
+        width: 85%;
+        color: white;
+        background-color: #008CBA;
+        padding: 1px;
+    }
 }
 
 @media only screen and (max-device-width: 767px){
+    #et-logo{
+        margin: 0 auto;
+        display: block;
+        max-height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .main-container{
+        width: 70%;
+        margin: 0 auto;
+        box-shadow: 0px 0px 15px #636363;
+        border-radius: 10px;
+        background-color: white;
+    }
+
     .two-column{
         width: 100%;
     }
@@ -206,129 +354,141 @@ select:invalid { color: gray; }
         border: solid 1px gray;
         border-radius: 7px;
     }
+
+    #name-lastname, #parti{
+        width: 90%;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 120%;
+    }
+
+    .symbol-rel{
+        height: 25px;
+        width: 25px;
+        margin: 0;
+        padding-right: 5px;
+        padding-left: 10px;
+    }
+
+    .symbol-rel-final{
+        height: 25px;
+        width: 25px;
+        margin-left: 20px;
+        padding-right: 5px;
+    }
+
+    .death-name{
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+    .death-name-sin{
+        margin-left: 20px;
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+    #deudos, #ad-edit, #deu2, #sepel{
+        width: 90%;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #datepicker{
+        width: 30%;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 120%;
+    }
+
+    #sala, #hora-vel, #hora-cor{
+        width: 20%;
+        height: 18px;
+        margin-bottom: 20px;
+    }
+
+    #address{
+        width: 90%;
+        height: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    #final-text{
+        width: 80%;
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f7f7f7;
+    }
+
+    #preview-text{
+        width: 300px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f7f7f7;
+    }
+
+    .name-title-con{
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .name-title-sin{
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .symbol-rel-prev{
+        height: 25px;
+        width: 25px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    #final-title{
+        width: 100%;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #final-content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #ad-complete{
+        margin-right: 20px;
+    }
+
+    .preview{
+        font-style: italic;
+        margin-left: 10%;
+    }
+
+    .terms{
+        margin: 0 auto;
+        width: 85%;
+        color: white;
+        background-color: #008CBA;
+        padding: 1px;
+    }
 }
 
-.symbol-rel{
-    height: 25px;
-    width: 25px;
-    margin: 0;
-    padding-right: 5px;
-    padding-left: 10px;
-}
 
-.symbol-rel-final{
-    height: 25px;
-    width: 25px;
-    margin-left: 20px;
-    padding-right: 5px;
-}
-
-.death-name{
-    font-size: 110%;
-    font-weight: bold;
-}
-
-.death-name-sin{
-    margin-left: 20px;
-    font-size: 110%;
-    font-weight: bold;
-}
-
-#name-lastname, #parti{
-    width: 93%;
-    height: 18px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-#deudos, #ad-edit, #deu2, #sepel{
-    width: 93%;
-    height: 80px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-#datepicker{
-    width: 30%;
-    height: 18px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-#sala, #hora-vel, #hora-cor{
-    width: 20%;
-    height: 18px;
-    margin-bottom: 20px;
-}
-
-#address{
-    width: 90%;
-    height: 18px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-#final-text{
-    width: 80%;
-    border: 2px solid gray;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f7f7f7;
-}
-
-#preview-text{
-    width: 300px;
-    border: 2px solid gray;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f7f7f7;
-}
-
-.name-title-con{
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-.name-title-sin{
-    margin: 20px;
-    font-weight: bold;
-}
-
-.symbol-rel-prev{
-    height: 25px;
-    width: 25px;
-    margin-top: 25px;
-    margin-left: 20px;
-}
-
-#final-title{
-    width: 100%;
-    height: 35px;
-    margin: 0;
-    padding: 0;
-}
-
-#final-content{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#ad-complete{
-    margin-right: 20px;
-}
-
-.preview{
-    font-style: italic;
-    margin-left: 10%;
-}
 
