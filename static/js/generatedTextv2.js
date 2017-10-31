@@ -5,6 +5,7 @@ $(function (){
 
     //Datos
     var name = $('#name-lastname'); //Nombre y apellido
+    var nick = $('#nickname'); //Apodo
     var deudos = $('#deudos'); //Mensaje de condolencia inicial
     var parti = $('#parti'); //Participantes
     var deu2 = $('#deu2'); //Mensaje de condolencia final
@@ -104,7 +105,11 @@ $(function (){
                         document.getElementById('final-title').innerHTML = '<img src="public/media/cruz.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
                         document.getElementById('final-content').innerHTML = '<p id="ad-complete"></p>';
                         var deathname = $('#death-name');
-                        deathname.text(name.val());
+                        if (nick.val() != ""){
+                            deathname.text(name.val()+' ('+nick.val()+')');
+                        } else {
+                            deathname.text(name.val());
+                        }
                         var complete = $('#ad-complete');
                         complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + sepel.val() + '.');
                     }
@@ -113,7 +118,11 @@ $(function (){
                         document.getElementById('final-title').innerHTML = '<img src="public/media/estrella-de-david.png" class="symbol-rel-final"><span class="death-name" id="death-name"></span>';
                         document.getElementById('final-content').innerHTML = '<p id="ad-complete"></p>';
                         var deathname = $('#death-name');
-                        deathname.text(name.val());
+                        if (nick.val() != ""){
+                            deathname.text(name.val()+' ('+nick.val()+')');
+                        } else {
+                            deathname.text(name.val());
+                        }
                         var complete = $('#ad-complete');
                         complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + sepel.val() + '.');
                     }
@@ -122,7 +131,11 @@ $(function (){
                         document.getElementById('final-title').innerHTML = '<span class="death-name-sin" id="death-name"></span>';
                         document.getElementById('final-content').innerHTML = '<p id="ad-complete"></p>';
                         var deathname = $('#death-name');
-                        deathname.text(name.val());
+                        if (nick.val() != ""){
+                            deathname.text(name.val()+' ('+nick.val()+')');
+                        } else {
+                            deathname.text(name.val());
+                        }
                         var complete = $('#ad-complete');
                         complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + sepel.val() + '.');
                     }

@@ -23,8 +23,8 @@
     </head>
     <body>
         <div class="cantChar">
-            <p id="charResTitle">Caracteres restantes:</p>
-            <p id="total-Char">---</p>
+            <p class="normalize" id="charResTitle">Caracteres restantes:</p>
+            <p class="normalize" id="total-Char">---</p>
         </div>
         <div class="main-container">
             <br>
@@ -32,12 +32,8 @@
             <br>
             <h1 class="main-title">Avisos fúnebres</h1>
             <hr>
-            <form>
+            <form id="death-form">
                 <h3 class="first-text">Por medio de este formulario usted podrá publicar avisos fúnebres en la edición impresa de El Telégrafo y en www.eltelegrafo.com</h3>
-                <br>
-                <div class="terms"><p class="terms-1">Términos y condiciones:</p>
-                <p class="terms-2">DIARIO EL TELÉGRAFO S.A. en su buena fé se reserva el derecho de corregir, agregar o quitar palabras o frases si lo considera necesario para optimizar el contenido e información de este aviso y/o evitar que las mismas puedan resultar ofensivas.</p></div>
-                <br>
                 <div class="two-column">
                     <div class="first-column">
                         <br>
@@ -57,8 +53,8 @@
                 <br>
                 <div class="preview-text" id="preview-text">
                     <br>
-                    <span class="name-title-sin">Nombre Apellido</span>
-                    <p id="lorem-ipsum-preview">(Q.E.P.D.) - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non vulputate est, vitae maximus tortor. Nullam purus est, suscipit at felis ac, dignissim condimentum velit. Donec quis ligula volutpat dui finibus vestibulum at ut quam. Maecenas a fringilla elit. Morbi in risus sed turpis mattis consequat eget eget ex.</p>
+                    <span class="name-title-sin">NOMBRE NOMBRE APELLIDO APELLIDO (APODO)</span>
+                    <p class="lorem" id="lorem-ipsum-preview">(Q.E.P.D) Falleció en la Paz del Señor ayer viernes 7 de mayo de 2016. Sus hijos: Carlos, Ana, Pedro, nietos y bisnietos y demás deudos participan con profundo dolor este fallecimiento y el sepelio efectuado en el Cementerio Central.</p>
                 </div>
                 <input type="text" name="noseen" id="noseen" hidden>
                 <br>
@@ -66,6 +62,8 @@
                 <h3 class="second-title">Datos del aviso</h3>
                 <h3 class="first-text">Por favor ingrese los datos de su aviso, con mayúsculas/minúsculas, tal como desea que sea publicado. No se aceptan textos todos en mayúscula.</h3>
                 <label id="normal-label">Nombre completo</label><input type="text" id="name-lastname">
+                <br>
+                <label id="normal-label">Apodo</label><input type="text" id="nickname">
                 <br>
                 <label id="normal-label">Fecha de deceso</label>
                 <br>
@@ -90,8 +88,7 @@
                 </div>
                 <br>
             </form>
-            <hr>
-            <p class="preview">Previsualización del aviso:</p>
+            <p class="normalize" id="preview">Previsualización del aviso:</p>
             <div id="final-text">
                 <br>
                 <div id="final-title"></div>
@@ -99,6 +96,18 @@
                 <br>
             </div>
             <br>
+            <hr>
+            <br>
+            <div class="terms"><p class="normalize" id="terms-1">Términos y condiciones:</p>
+            <p class="normalize" id="terms-2">DIARIO EL TELÉGRAFO S.A. en su buena fé se reserva el derecho de corregir, agregar o quitar palabras o frases si lo considera necesario para optimizar el contenido e información de este aviso y/o evitar que las mismas puedan resultar ofensivas.</p></div>
+            <br>
+            <label>Precio (IVA incluido):</label>
+            <input type="text" name="price" id="price" disabled>
+            <br><br>
+            <div class="last-buttons">
+                <input type="submit" name="send-form" value="Enviar" id="send-form">
+                <input type="reset" name="reset-form" value="Cancelar" id="reset-form">
+            </div>
         </div>
     </body>
     <script>

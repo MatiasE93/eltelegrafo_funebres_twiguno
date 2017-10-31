@@ -1,8 +1,8 @@
 body{
-    background-color: #f7f7f7;
+    background-color: #eaeaea;
 }
 
-h1, h2, h3, h4, h5, p, label, a, span{
+h1, h2, h3, h4, h5, label, a, span{
     font-family: sans-serif;
 }
 
@@ -19,8 +19,12 @@ h3.second-title{
     text-align: center;
 }
 
-p, label{
-    margin: 20px;
+p.normalize{
+    font-family: sans-serif;
+}
+
+p.lorem{
+    font-family: "Times New Roman", Times, serif;
 }
 
 select{
@@ -34,7 +38,7 @@ hr{
 textarea, input{
     border: 2px solid #C8C7C7;
     border-radius: 6px;
-    background-color: #f7f7f7;
+    background-color: white;
 }
 
 select:invalid { color: gray; }
@@ -49,7 +53,8 @@ select:invalid { color: gray; }
     margin: 0 auto;
     box-shadow: 0px 0px 15px #636363;
     border-radius: 10px;
-    background-color: white;
+    background-color: #f9f9f9;
+    padding: 20px;
 }
 
 .two-column{
@@ -76,19 +81,19 @@ select:invalid { color: gray; }
 .symbol-rel-final{
     height: 25px;
     width: 25px;
-    margin-left: 20px;
     padding-right: 5px;
 }
 
 .death-name{
     font-size: 110%;
     font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .death-name-sin{
-    margin-left: 20px;
     font-size: 110%;
     font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .button-generate{
@@ -103,7 +108,7 @@ select:invalid { color: gray; }
     margin-left: 20px;
 }
 
-#name-lastname, #parti{
+#name-lastname, #parti, #nickname{
     width: 95%;
     height: 18px;
     margin-left: 20px;
@@ -164,39 +169,30 @@ select:invalid { color: gray; }
 #final-text{
     width: 80%;
     border: 2px solid gray;
-    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #f7f7f7;
+    background-color: white;
+    padding: 20px;
 }
 
 #preview-text{
     width: 300px;
     border: 2px solid gray;
-    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #f7f7f7;
+    background-color: white;
+    padding: 20px;
 }
 
-.name-title-con{
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
+.name-title-con, .name-title-sin{
     font-weight: bold;
-}
-
-.name-title-sin{
-    margin: 20px;
-    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .symbol-rel-prev{
     height: 25px;
     width: 25px;
-    margin-top: 25px;
-    margin-left: 20px;
+    padding-right: 5px; 
 }
 
 #final-title{
@@ -216,7 +212,7 @@ select:invalid { color: gray; }
     margin-right: 20px;
 }
 
-.preview{
+#preview{
     font-style: italic;
     margin-left: 10%;
 }
@@ -254,6 +250,31 @@ select:invalid { color: gray; }
     width: 85%;
     color: white;
     background-color: #008CBA;
-    padding: 1px;
+    padding: 20px;
+}
+
+.last-buttons{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#send-form, #reset-form{
+    padding: 15px 25px;
+    color: white;
+    background-color: #2B63B7;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 85%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+#price{
+    height: 25px;
+    font-size: 120%;
+    color: red;
 }
 
