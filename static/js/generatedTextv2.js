@@ -13,9 +13,21 @@ $(function (){
     var date_death = $('#datepicker'); //Fecha fallecimiento
 
     $('#generate').click(function (){
+        var totChar;
         //adt2Int = parseInt(ad_type2.val());
         adt1Int = parseInt(ad_type.val());
-        var totChar = $('#noseen').val().length;
+        if (adt1Int == 1){
+            totChar = 400;
+        }
+
+        if (adt1Int == 2){
+            totChar = 520;
+        }
+
+        if (adt1Int == 3){
+            totChar = 630;
+        }
+        console.log("Total caracteres permitidos: "+totChar.valueOf());
         //console.log('Caracteres total permitidos: '+totChar);
         var totalCont = parseInt($('#name-lastname').val().length)+parseInt($('#deudos').val().length)+parseInt($('#parti').val().length)+parseInt($('#deu2').val().length)+parseInt($('#sepel').val().length);
         //console.log('Caracteres en datos: '+totalCont);
