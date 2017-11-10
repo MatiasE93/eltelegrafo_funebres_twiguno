@@ -166,6 +166,15 @@ select:invalid { color: gray; }
     border-radius: 15px;
 }
 
+#send-console{
+    padding: 15px 25px;
+    color: white;
+    background-color: #2B63B7;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
 #final-text{
     width: 80%;
     border: 2px solid gray;

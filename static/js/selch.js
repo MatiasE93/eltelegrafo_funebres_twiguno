@@ -7,7 +7,7 @@
                 case '0':
                     break;
 
-                case '1':
+                case '400':
                     if (window.screen.width > 1024){
                         document.getElementById('preview-text').style.width = "300px";
                     } else {
@@ -36,7 +36,7 @@
                     }
                     break;
 
-                case '2':
+                case '520':
                     if (window.screen.width > 1024){
                         document.getElementById('preview-text').style.width = "500px";
                     } else {
@@ -65,7 +65,7 @@
                     }
                     break;
 
-                case '3':
+                case '630':
                     if (window.screen.width > 1024){
                         document.getElementById('preview-text').style.width = "700px";
                     } else {
@@ -103,7 +103,7 @@
                 case '0':
                     break;
 
-                case '1':
+                case '400':
                     if (window.screen.width > 1024){
                         document.getElementById('preview-text').style.width = "300px";
                     } else {
@@ -130,9 +130,10 @@
                         var prev = $('#lorem-ipsum-preview');
                         prev.text('(Q.E.P.D) Falleció en la Paz del Señor ayer viernes 7 de mayo de 2016. Sus hijos: Carlos, Ana, Pedro, nietos y bisnietos y demás deudos participan con profundo dolor este fallecimiento y el sepelio efectuado en el Cementerio Central.');
                     }
+                    $('#price').val('$600');
                     break;
 
-                case '2':
+                case '520':
                     if (window.screen.width > 1024){
                         document.getElementById('preview-text').style.width = "500px";
                     } else {
@@ -159,9 +160,10 @@
                         var prev = $('#lorem-ipsum-preview');
                         prev.text('(Q.E.P.D) Falleció en la Paz del Señor ayer viernes 7 de mayo de 2016. Sus hijos: Carlos, Ana, Pedro, nietos y bisnietos y demás deudos participan con profundo dolor este fallecimiento y el sepelio efectuado en el Cementerio Central.');
                     }
+                    $('#price').val('$1500');
                     break;
 
-                case '3':
+                case '630':
                     if (window.screen.width > 1024){
                         document.getElementById('preview-text').style.width = "700px";
                     } else {
@@ -188,6 +190,7 @@
                         var prev = $('#lorem-ipsum-preview');
                         prev.text('(Q.E.P.D) Falleció en la Paz del Señor ayer viernes 7 de mayo de 2016. Sus hijos: Carlos, Ana, Pedro, nietos y bisnietos y demás deudos participan con profundo dolor este fallecimiento y el sepelio efectuado en el Cementerio Central.');
                     }
+                    $('#price').val('$3500');
                     break;
             }
             document.getElementById('ad-type-avi').style.color = "black";
