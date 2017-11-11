@@ -157,16 +157,7 @@ select:invalid { color: gray; }
     margin-bottom: 20px;
 }
 
-#generate{
-    padding: 15px 25px;
-    color: white;
-    background-color: #2B63B7;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 15px;
-}
-
-#back-to-main{
+#generate, #back-to-main{
     padding: 15px 25px;
     color: white;
     background-color: #2B63B7;
@@ -290,5 +281,13 @@ select:invalid { color: gray; }
 .final-message{
     text-align: center;
     width: 100%;
+}
+
+#no-resaltar{
+    font-size: 80%;
+}
+
+#resaltar{
+    color: red;
 }
 
