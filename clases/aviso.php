@@ -65,7 +65,8 @@ class Aviso extends ClaseBase {
     }
 
 
-    public function setAviso($idString,$tipo_aviso,$simbolo,$full_nombre,$apodo,$fecha_f,$mensaje_init,$participan,$mensaje_fin,$sepelio){
+    public function setAviso($fecha_s,$idString,$tipo_aviso,$simbolo,$full_nombre,$apodo,$fecha_f,$mensaje_init,$participan,$mensaje_fin,$sepelio,$precio){
+        $f_s = $fecha_s;
         $i = $idString;
         $t_a = $tipo_aviso;
         $si = $simbolo;
@@ -75,9 +76,10 @@ class Aviso extends ClaseBase {
         $m_i = $mensaje_init;
         $p = $participan;
         $m_f = $mensaje_fin;
-        $se = $sepelio; 
+        $se = $sepelio;
+        $pr = $precio; 
 
-        $stmt = $this->getDB()->prepare("INSERT INTO Avisos (id,tipo_aviso,simbolo,full_nombre,apodo,fecha_f,mensaje_init,participan,mensaje_fin,sepelio) VALUES ('$i','$t_a', '$si', '$f_n', '$a', '$f_f', '$m_i', '$p', '$m_f', '$se')");
+        $stmt = $this->getDB()->prepare("INSERT INTO Aviso (fecha_ingreso,id,tipo_aviso,simbolo,full_nombre,apodo,fecha_f,mensaje_init,participan,mensaje_fin,sepelio,precio) VALUES ('$f_s','$i','$t_a', '$si', '$f_n', '$a', '$f_f', '$m_i', '$p', '$m_f', '$se', '$pr')");
         $resultado = $stmt->execute();
         return $resultado;
     }

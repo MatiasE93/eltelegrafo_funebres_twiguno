@@ -38,7 +38,7 @@
                     <div class="first-column">
                         <br>
                         <label id="ad-type-avi">Tipo de aviso</label>
-                        <select id="ad-type" name="ad-type"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="400">Una columna - 400 caracteres</option><option value="520">Dos columnas - 520 caracteres</option><option value="630">Tres columnas - 630 caracteres</option></select>
+                        <select id="ad-type" name="ad-type" readonly="readonly"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="400">Una columna - 400 caracteres</option><option value="520">Dos columnas - 520 caracteres</option><option value="630">Tres columnas - 630 caracteres</option></select>
                         <!-- <p id="ad-type-sep">Sepelio<select id="ad-type2"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="1">A realizarse</option><option value="2">Realizado</option></select></p> -->
                     </div>
                     <div class="second-column" id="radio-rel">
@@ -102,20 +102,20 @@
                 <label>Precio (IVA incluido):</label>
                 <input type="text" name="price" id="price" disabled>
                 <br><br>
-                <div class="button-generate">
-                    <a id="send-console">Enviar console log</a>
-                </div>
                 <div class="last-buttons">
                     <input type="submit" name="send-form" value="Enviar" id="send-form">
                     <input type="reset" name="reset-form" value="Cancelar" id="reset-form">
                 </div>
             </form>
-            <h1>{{ mensaje }}</h1>
+            <h1>{{ mensaje1 }}</h1>
         </div>
     </body>
     <script>
         $( function() {
             $( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
         } );
+    </script>
+    <script type="text/javascript">
+        document.oncontextmenu = function(){return false;}
     </script>
 </html>

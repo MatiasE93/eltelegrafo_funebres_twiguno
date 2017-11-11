@@ -1,0 +1,46 @@
+-- phpMyAdmin SQL Dump
+-- version 4.4.10
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost:8889
+-- Tiempo de generación: 11-11-2017 a las 23:21:06
+-- Versión del servidor: 5.5.42
+-- Versión de PHP: 5.6.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Base de datos: `Funebres`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `Aviso`
+--
+
+CREATE TABLE `Aviso` (
+  `fecha_ingreso` date NOT NULL,
+  `id` varchar(11) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `tipo_aviso` int(11) NOT NULL,
+  `simbolo` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `full_nombre` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `apodo` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `fecha_f` date NOT NULL,
+  `mensaje_init` varchar(400) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `participan` varchar(200) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `mensaje_fin` varchar(400) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `sepelio` varchar(200) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `precio` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `Aviso`
+--
+ALTER TABLE `Aviso`
+  ADD PRIMARY KEY (`id`);

@@ -166,7 +166,7 @@ select:invalid { color: gray; }
     border-radius: 15px;
 }
 
-#send-console{
+#back-to-main{
     padding: 15px 25px;
     color: white;
     background-color: #2B63B7;
@@ -285,5 +285,10 @@ select:invalid { color: gray; }
     height: 25px;
     font-size: 120%;
     color: red;
+}
+
+.final-message{
+    text-align: center;
+    width: 100%;
 }
 

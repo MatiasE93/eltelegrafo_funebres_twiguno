@@ -6,19 +6,37 @@
         <title>{{ titulo }}</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+        <link rel="stylesheet" type="text/css" href="static/css/noty.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="static/css/style.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" href="static/css/mobile-style.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="static/js/generatedText.js"></script>
+        <script src="static/js/noty.js"></script>
+        <script src="static/js/generatedTextv2.js"></script>
         <script src="static/js/selch.js"></script>
+        <script src="static/js/suggested-text.js"></script>
+        <!-- <script src="static/js/count.js"></script> -->
         <!-- <script src="static/js/angular.js"></script> -->
     </head>
     <body>
-        {{ mensaje }}
-        <br>
-        {{ identificador }}
+        <div class="main-container">
+            <br>
+            <img id="et-logo" src="public/media/eltelegrafo-logo.png">
+            <br>
+            <h1 class="main-title">Avisos fúnebres</h1>
+            <hr>
+            <div class="final-message">
+                <br>
+                <h3>{{ mensaje1 }}  {{ identificador }}</h3>
+                <h3>{{ mensaje2 }}</h3>
+                <br>
+                <div class="button-generate">
+                    <a id="back-to-main" href="index/home/">Volver</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

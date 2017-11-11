@@ -15,7 +15,7 @@ $(function (){
     $('#generate').click(function (){
         var totChar;
         var adt1Int = parseInt(ad_type.val());
-        if (adt1Int >= 1){
+        if (adt1Int > 1){
             if (adt1Int == 400){
                 totChar = 400;
             }
@@ -182,9 +182,5 @@ $(function (){
                 }).show();
                 document.getElementById('ad-type-avi').style.color = "red";
         }
-    });
-
-    $('#send-console').click(function (){
-        alert($("input[name='rel']:checked").val());
     });
 });
