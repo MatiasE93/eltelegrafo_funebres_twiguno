@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 11-11-2017 a las 23:21:06
+-- Tiempo de generación: 15-11-2017 a las 04:44:50
 -- Versión del servidor: 5.5.42
 -- Versión de PHP: 5.6.10
 
@@ -25,15 +25,26 @@ CREATE TABLE `Aviso` (
   `id` varchar(11) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `tipo_aviso` int(11) NOT NULL,
   `simbolo` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `full_nombre` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `apodo` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `fecha_f` date NOT NULL,
-  `mensaje_init` varchar(400) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `participan` varchar(200) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `mensaje_fin` varchar(400) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
-  `sepelio` varchar(200) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_fallecido` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `apodo_fallecido` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `mensaje` varchar(630) COLLATE utf8_unicode_ci NOT NULL,
+  `nombre_fact` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `direccion_fact` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `ciudad_fact` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `departamento_fact` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `codigo_postal` int(11) NOT NULL,
+  `email_fact` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `telefono_fact` int(8) NOT NULL,
+  `celular_fact` int(9) NOT NULL,
   `precio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `Aviso`
+--
+
+INSERT INTO `Aviso` (`fecha_ingreso`, `id`, `tipo_aviso`, `simbolo`, `nombre_fallecido`, `apodo_fallecido`, `mensaje`, `nombre_fact`, `direccion_fact`, `ciudad_fact`, `departamento_fact`, `codigo_postal`, `email_fact`, `telefono_fact`, `celular_fact`, `precio`) VALUES
+('2017-11-15', 'czQqf7MOM2', 520, 'cruz', 'Jose Perez', 'Pelele', '(Q.E.P.D) - FalleciÃ³ el dÃ­a 2017-11-01. Su esposa e hijos participan con profundo pesar este fallecimiento. El sepelio fue realizado en cementerio central.', 'Matias Espindola', 'Libertad 934 105', 'Paysandu', '520', 60000, 'matiase1993@hotmail.com', 47250553, 99450535, 1500);
 
 --
 -- Índices para tablas volcadas
