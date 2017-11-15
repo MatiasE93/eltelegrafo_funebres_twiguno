@@ -65,22 +65,36 @@ class Aviso extends ClaseBase {
     }
 
 
-    public function setAviso($fecha_s,$idString,$tipo_aviso,$simbolo,$full_nombre,$apodo,$fecha_f,$mensaje_init,$participan,$mensaje_fin,$sepelio,$precio){
+    public function setAviso($fecha_s,$idString,$tipo_aviso,$simbolo,$full_nombre,$apodo,$mensaje,$nombre_fact,$direccion_fact,$ciudad_fact,$departamento_fact,$codigo_postal,$email_fact,$telefono_fact,$celular_fact,$precio){
         $f_s = $fecha_s;
         $i = $idString;
         $t_a = $tipo_aviso;
         $si = $simbolo;
         $f_n = $full_nombre;
         $a = $apodo;
-        $f_f = $fecha_f;
-        $m_i = $mensaje_init;
-        $p = $participan;
-        $m_f = $mensaje_fin;
-        $se = $sepelio;
+        $m = $mensaje;
+        $n_f = $nombre_fact;
+        $di_f = $direccion_fact;
+        $ci_f = $ciudad_fact;
+        $de_f = $departamento_fact;
+        $c_p = $codigo_postal;
+        $e_f = $email_fact;
+        $t_f = $telefono_fact;
+        $ce_f = $celular_fact;
         $pr = $precio; 
 
-        $stmt = $this->getDB()->prepare("INSERT INTO Aviso (fecha_ingreso,id,tipo_aviso,simbolo,full_nombre,apodo,fecha_f,mensaje_init,participan,mensaje_fin,sepelio,precio) VALUES ('$f_s','$i','$t_a', '$si', '$f_n', '$a', '$f_f', '$m_i', '$p', '$m_f', '$se', '$pr')");
+        $stmt = $this->getDB()->prepare("INSERT INTO Aviso (fecha_ingreso,id,tipo_aviso,simbolo,nombre_fallecido,apodo_fallecido,mensaje,nombre_fact,direccion_fact,ciudad_fact,departamento_fact,codigo_postal,email_fact,telefono_fact,celular_fact,precio) VALUES ('$f_s','$i','$t_a', '$si', '$f_n', '$a', '$m', '$n_f', '$di_f', '$ci_f', '$de_f', '$c_p', '$e_f', '$t_f', '$ce_f', '$pr')");
         $resultado = $stmt->execute();
+        return $resultado;
+    }
+
+    public function borrar($id){
+        $stmt = $this->getDB()->prepare("DELETE FROM Aviso WHERE id=$id");
+        $stmt->execute();
+        $resultado=false;
+        if($this->getDB()->affected_rows>0){
+            $resultado=true;
+        }
         return $resultado;
     }
 

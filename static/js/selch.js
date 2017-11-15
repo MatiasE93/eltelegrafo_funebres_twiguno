@@ -130,7 +130,7 @@
                         var prev = $('#lorem-ipsum-preview');
                         prev.text('(Q.E.P.D) Falleció en la Paz del Señor ayer viernes 7 de mayo de 2016. Sus hijos: Carlos, Ana, Pedro, nietos y bisnietos y demás deudos participan con profundo dolor este fallecimiento y el sepelio efectuado en el Cementerio Central.');
                     }
-                    $('#price').val('$600');
+                    $('#total-Price').text('$600');
                     break;
 
                 case '520':
@@ -160,7 +160,7 @@
                         var prev = $('#lorem-ipsum-preview');
                         prev.text('(Q.E.P.D) Falleció en la Paz del Señor ayer viernes 7 de mayo de 2016. Sus hijos: Carlos, Ana, Pedro, nietos y bisnietos y demás deudos participan con profundo dolor este fallecimiento y el sepelio efectuado en el Cementerio Central.');
                     }
-                    $('#price').val('$1500');
+                    $('#total-Price').text('$1500');
                     break;
 
                 case '630':
@@ -190,7 +190,7 @@
                         var prev = $('#lorem-ipsum-preview');
                         prev.text('(Q.E.P.D) Falleció en la Paz del Señor ayer viernes 7 de mayo de 2016. Sus hijos: Carlos, Ana, Pedro, nietos y bisnietos y demás deudos participan con profundo dolor este fallecimiento y el sepelio efectuado en el Cementerio Central.');
                     }
-                    $('#price').val('$3500');
+                    $('#total-Price').text('$3500');
                     break;
             }
             document.getElementById('ad-type-avi').style.color = "black";

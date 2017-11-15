@@ -60,6 +60,16 @@ class IndexController{
             $participan=($_POST["parti"]);
             $mensaje_fin=($_POST["deu2"]);
             $sepelio=($_POST["sepel"]);
+            $nombre_fact=($_POST["name-client"]);
+            $apellido_fact=($_POST["lastname-client"]);
+            $direccion_fact=($_POST["address"]);
+            $numero_fact=($_POST["door-number"]);
+            $ciudad_fact=($_POST["city"]);
+            $departamento_fact=($_POST["departamento"]);
+            $codigo_postal=($_POST["postal-code"]);
+            $email_fact=($_POST["email"]);
+            $telefono_fact=($_POST["phone"]);
+            $celular_fact=($_POST["cellphone"]);
             $precio = '';
             if ($tipo_aviso == '400'){
                 $corr_t_aviso = '1';
@@ -74,9 +84,12 @@ class IndexController{
                 $precio='3500';
             }
             if ($corr_t_aviso == '1'){
+                $aviso_completo=$mensaje_init.'el día '.$fecha_f.'. '.$participan.' '.$mensaje_fin.$sepelio.'.';
+                $nombre_apellido_fact=$nombre_fact.' '.$apellido_fact;
+                $direccion=$direccion_fact.' '.$numero_fact;
                 $aviso=new Aviso();
                 $idCode=$aviso->randomString();
-                $respuesta=$aviso->setAviso($fecha_server,$idCode,$tipo_aviso,$simbolo,$full_nombre,$apodo,$fecha_f,$mensaje_init,$participan,$mensaje_fin,$sepelio,$precio);
+                $respuesta=$aviso->setAviso($fecha_server,$idCode,$tipo_aviso,$simbolo,$full_nombre,$apodo,$aviso_completo,$nombre_apellido_fact,$direccion,$ciudad_fact,$departamento_fact,$codigo_postal,$email_fact,$telefono_fact,$celular_fact,$precio);
                 if ($respuesta==true){
                     $mensaje1="Aviso enviado con exito, el codigo identificador es:  ";
                     $mensaje2="Anote el identificador para presentar a El Telégrafo en caso de problemas.";

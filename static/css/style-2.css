@@ -57,23 +57,8 @@ select:invalid { color: gray; }
     padding: 20px;
 }
 
-.container-checkout{
-    width: 90%;
-    margin: 0 auto;
-    box-shadow: 0px 0px 15px #636363;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
-.data-div, .two-column{
+.two-column{
     width: 100%;
-    display: flex;
-}
-
-.one-column-small, .two-column-small, .three-column-small{
-    width: 70%;
-    margin: 0 auto;
     display: flex;
 }
 
@@ -132,12 +117,6 @@ select:invalid { color: gray; }
     object-fit: cover;
 }
 
-#client-data{
-    width: 100%;
-    height: 25px;
-    object-fit: cover;
-}
-
 #deudos, #ad-edit, #deu2, #sepel{
     width: 95%;
     height: 80px;
@@ -188,7 +167,6 @@ select:invalid { color: gray; }
 }
 
 #final-text{
-    width: 80%;
     border: 2px solid gray;
     margin-left: auto;
     margin-right: auto;
@@ -238,7 +216,7 @@ select:invalid { color: gray; }
     margin-left: 10%;
 }
 
-#charResTitle, #priceTitle{
+#charResTitle{
     text-align: center;
     font-size: 70%;
     margin-top: 10px;
@@ -248,27 +226,12 @@ select:invalid { color: gray; }
 
 #total-Char{
     text-align: center;
-}
 
-#total-Price{
-    text-align: center;
-    color: red;
 }
 
 .cantChar{
     position: fixed;
     left: 100px;
-    top: 20px;
-    height: 80px;
-    width: 150px;
-    background-color: white;
-    border: solid 1px gray;
-    border-radius: 7px;
-}
-
-.cantPrice{
-    position: fixed;
-    right: 100px;
     top: 20px;
     height: 80px;
     width: 150px;
@@ -325,38 +288,5 @@ select:invalid { color: gray; }
 
 #resaltar{
     color: red;
-}
-
-.cincuenta-cd{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 50%;
-}
-
-.setenta-cd{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 70%;
-} 
-
-.treinta-cd{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 30%;
-}
-
-.cien-cd{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-#departamento{
-    width: 100%;
-    height: 35px;
 }
 

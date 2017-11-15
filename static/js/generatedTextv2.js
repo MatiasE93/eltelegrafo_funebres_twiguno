@@ -119,7 +119,7 @@ $(function (){
                             deathname.text(name.val());
                         }
                         var complete = $('#ad-complete');
-                        complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + sepel.val() + '.');
+                        complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + ' ' + deu2.val() + sepel.val() + '.');
                     }
 
                     if (document.getElementById('star').checked){
@@ -132,7 +132,7 @@ $(function (){
                             deathname.text(name.val());
                         }
                         var complete = $('#ad-complete');
-                        complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + sepel.val() + '.');
+                        complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + ' ' + deu2.val() + sepel.val() + '.');
                     }
                         
                     if (document.getElementById('sin-s').checked){
@@ -145,7 +145,7 @@ $(function (){
                             deathname.text(name.val());
                         }
                         var complete = $('#ad-complete');
-                        complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + deu2.val() + sepel.val() + '.');
+                        complete.text(deudos.val() + 'el día ' + date_death.val() + '. ' + parti.val() + ' ' + deu2.val() + sepel.val() + '.');
                     }
 
                     document.getElementById('total-Char').style.color = "black";

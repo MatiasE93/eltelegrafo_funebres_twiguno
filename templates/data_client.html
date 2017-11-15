@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="{{ url_base }}">
+        <meta charset="utf-8">
+        <title>{{ titulo }}</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="static/css/noty.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="static/css/style.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" href="static/css/mobile-style.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="static/js/noty.js"></script>
+        <script src="static/js/generatedTextv2.js"></script>
+        <script src="static/js/selch.js"></script>
+        <script src="static/js/suggested-text.js"></script>
+        <!-- <script src="static/js/count.js"></script> -->
+        <!-- <script src="static/js/angular.js"></script> -->
+    </head>
+    <body>
+        <div class="container-checkout">
+            <br>
+            <img id="et-logo" src="public/media/eltelegrafo-logo.png">
+            <br>
+            <h1 class="main-title">Avisos fúnebres</h1>
+            <hr>
+            <form id="data-client" method="POST" action="">
+                <div class="data-div">
+                    <div class="setenta-cd">
+                        <br>
+                        <h3 class="second-title">Datos de facturación</h3>
+                        <br>
+                        <div class="two-column-small">
+                            <div class="cincuenta-cd">
+                                <label id="normal-label">Nombre</label><input type="text" name="name-client" id="client-data">
+                            </div>
+                            <div class="cincuenta-cd" id="radio-rel">
+                                <label id="normal-label">Apellido</label><input type="text" name="lastname-client" id="client-data">
+                            </div>
+                        </div>
+                        <div class="two-column-small">
+                            <div class="setenta-cd">
+                                <label id="normal-label">Dirección</label><input type="text" name="address" id="client-data">
+                            </div>
+                            <div class="treinta-cd" id="radio-rel">
+                                <label id="normal-label">Número</label><input type="text" name="door-number" id="client-data">
+                            </div>
+                        </div>
+                        <div class="one-column-small">
+                            <div class="cien-cd">
+                                <label id="normal-label">Ciudad</label><br><input type="text" name="city" id="client-data">
+                            </div>
+                        </div>
+                        <div class="two-column-small">
+                            <div class="cincuenta-cd">
+                                <label id="normal-label">Departamento</label><br><select id="departamento" name="departamento" readonly="readonly"><option value="0" disabled selected hidden>Seleccione opción...</option><option value="400">Artigas</option><option value="520">Canelones</option><option value="630">Cerro Largo</option><option value="400">Colonia</option><option value="520">Durazno</option><option value="630">Flores</option><option value="400">Florida</option><option value="520">Lavalleja</option><option value="630">Maldonado</option><option value="400">Montevideo</option><option value="520">Paysandú</option><option value="630">Río Negro</option><option value="400">Rivera</option><option value="520">Rocha</option><option value="630">Salto</option><option value="400">San José</option><option value="520">Soriano</option><option value="630">Tacuarembó</option><option value="630">Treinta y Tres</option></select>
+                            </div>
+                            <div class="cincuenta-cd">
+                                <label id="normal-label">Codigo Postal</label><input type="text" name="postal-code" id="client-data">
+                            </div>
+                        </div>
+                        <div class="one-column-small">
+                            <div class="cien-cd">
+                                <label id="normal-label">Email</label><br><input type="text" name="email" id="client-data">
+                            </div>
+                        </div>
+                        <div class="two-column-small">
+                            <div class="cincuenta-cd">
+                                <label id="normal-label">Teléfono</label><input type="text" name="phone" id="client-data">
+                            </div>
+                            <div class="cincuenta-cd">
+                                <label id="normal-label">Celular</label><input type="text" name="cellphone" id="client-data">
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div class="button-generate">
+                <a id="back-to-main" href="index/home/">Volver</a>
+            </div>
+        </div>
+    </body>
+</html>
