@@ -1,53 +1,66 @@
+/* Cuerpo html */
 body{
     background-color: #eaeaea;
 }
 
+/* Normalizador de fuentes para etiquetas */
 h1, h2, h3, h4, h5, label, a, span{
     font-family: sans-serif;
 }
 
+/* Etiqueta H1 específica */
 h1.main-title{
     text-align: center;
 }
 
+/* Etiqueta H3 específica */
 h3.first-text{
     margin: 20px;
     color: grey;
 }
 
+/* Etiqueta H3 específica */
 h3.second-title{
     text-align: center;
 }
 
+/* Etiqueta P normalizadora */
 p.normalize{
     font-family: sans-serif;
 }
 
+/* Etiqueta P específica */
 p.lorem{
     font-family: "Times New Roman", Times, serif;
 }
 
+/* Largo normal de los select */
 select{
     width: 200px;
 }
 
+/* Largo de barra separadora */
 hr{
     width: 95%;
 }
 
+/* Diseño a textarea e inputs */
 textarea, input{
     border: 2px solid #C8C7C7;
     border-radius: 6px;
     background-color: white;
 }
 
+/* Normalizador de select */
 select:invalid { color: gray; }
 
+/* Logo El Telégrafo */
 #et-logo{
     margin: 0 auto;
     display: block;
 }
 
+/* Contenedor principal */
 .main-container{
     width: 70%;
     margin: 0 auto;
@@ -57,34 +70,25 @@ select:invalid { color: gray; }
     padding: 20px;
 }
 
-.container-checkout{
-    width: 90%;
-    margin: 0 auto;
-    box-shadow: 0px 0px 15px #636363;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
+/* Contenedores para datos y dos columnas */
 .data-div, .two-column{
     width: 100%;
     display: flex;
 }
 
+/* Contenedores menores para una, dos y tres columnas */
 .one-column-small, .two-column-small, .three-column-small{
     width: 70%;
     margin: 0 auto;
     display: flex;
 }
 
-.first-column {
-    width: 50%;
-} 
-
-.second-column{
+/* Contenedor columna para two-column */
+.first-column, .second-column {
     width: 50%;
 }
 
+/* Simbolo religioso a elegir */
 .symbol-rel{
     height: 25px;
     width: 25px;
@@ -93,36 +97,35 @@ select:invalid { color: gray; }
     padding-left: 10px;
 }
 
+/* Simbolo religioso escogido */
 .symbol-rel-final{
     height: 25px;
     width: 25px;
     padding-right: 5px;
 }
 
-.death-name{
+/* Nombre del difunto */
+.death-name, .death-name-sin{
     font-size: 110%;
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
 }
 
-.death-name-sin{
-    font-size: 110%;
-    font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
-}
-
+/* Boton genérico */
 .button-generate{
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
+/* Boton genérico para sugerencias */
 .button-suggest{
     margin-top: 15px;
     margin-bottom: 10px;
     margin-left: 20px;
 }
 
+/* Normalizador de inputs para aviso */
 #name-lastname, #parti, #nickname{
     width: 95%;
     height: 18px;
@@ -132,12 +135,14 @@ select:invalid { color: gray; }
     object-fit: cover;
 }
 
+/* Normalizador de inputs para facturacion */
 #client-data{
     width: 100%;
     height: 25px;
     object-fit: cover;
 }
 
+/* Normalizador de text-area para aviso */
 #deudos, #ad-edit, #deu2, #sepel{
     width: 95%;
     height: 80px;
@@ -146,6 +151,7 @@ select:invalid { color: gray; }
     margin-bottom: 20px;
 }
 
+/* Boton de sugerencias */
 .suggest-b{
     padding: 10px 20px;
     color: white;
@@ -156,6 +162,7 @@ select:invalid { color: gray; }
     font-size: 70%;
 }
 
+/* Input fecha deceso */
 #datepicker{
     width: 30%;
     height: 18px;
@@ -164,12 +171,14 @@ select:invalid { color: gray; }
     margin-bottom: 20px;
 }
 
+/* Input de datos de sepelio (NO SE USAN) */
 #sala, #hora-vel, #hora-cor{
     width: 20%;
     height: 18px;
     margin-bottom: 20px;
 }
 
+/* NO SE USA */
 #address{
     width: 90%;
     height: 18px;
@@ -178,6 +187,7 @@ select:invalid { color: gray; }
     margin-bottom: 20px;
 }
 
+/* Boton para generar texto y volver */
 #generate, #back-to-main{
     padding: 15px 25px;
     color: white;
@@ -187,6 +197,7 @@ select:invalid { color: gray; }
     border-radius: 15px;
 }
 
+/* Contenedor con el aviso previsualizado final */
 #final-text{
     width: 80%;
     border: 2px solid gray;
@@ -196,6 +207,7 @@ select:invalid { color: gray; }
     padding: 20px;
 }
 
+/* Contenedor con el aviso previsualizado */
 #preview-text{
     width: 300px;
     border: 2px solid gray;
@@ -205,17 +217,20 @@ select:invalid { color: gray; }
     padding: 20px;
 }
 
+/* Nombre difunto con y sin simbolo en el aviso previsualizado final */
 .name-title-con, .name-title-sin{
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
 }
 
+/* Simbolo en el aviso previsualizado */
 .symbol-rel-prev{
     height: 25px;
     width: 25px;
     padding-right: 5px; 
 }
 
+/* Contenedor nombre difunto con y sin simbolo en el aviso previsualizado final */
 #final-title{
     width: 100%;
     height: 35px;
@@ -223,21 +238,25 @@ select:invalid { color: gray; }
     padding: 0;
 }
 
+/* Contenedor con el contenido del aviso previsualizado final */
 #final-content{
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
+/* NO SE USA EN EL INDEX */
 #ad-complete{
     margin-right: 20px;
 }
 
+/* Texto divisor de previsualizacion de aviso */
 #preview{
     font-style: italic;
     margin-left: 10%;
 }
 
+/* Titulo ventanas flotantes de caracteres y precio */
 #charResTitle, #priceTitle{
     text-align: center;
     font-size: 70%;
@@ -246,15 +265,18 @@ select:invalid { color: gray; }
     padding: 0;
 }
 
+/* Numero de caracteres en ventana flotante de caracteres */
 #total-Char{
     text-align: center;
 }
 
+/* Precio en ventana flotante de precio */
 #total-Price{
     text-align: center;
     color: red;
 }
 
+/* Ventana flotante de caracteres */
 .cantChar{
     position: fixed;
     left: 100px;
@@ -266,6 +288,7 @@ select:invalid { color: gray; }
     border-radius: 7px;
 }
 
+/* Ventana flotante de precio */
 .cantPrice{
     position: fixed;
     right: 100px;
@@ -277,10 +300,12 @@ select:invalid { color: gray; }
     border-radius: 7px;
 }
 
+/* Etiqueta de nombres */
 #normal-label{
     font-size: 100%;
 }
 
+/* Terminos de uso y condiciones */
 .terms{
     margin: 0 auto;
     width: 85%;
@@ -289,11 +314,13 @@ select:invalid { color: gray; }
     padding: 20px;
 }
 
+/* Contenedor de botones de enviar y resetear */
 .last-buttons{
     margin: 0 auto;
     text-align: center;
 }
 
+/* Boton enviar formulario y resetear formulario */
 #send-form, #reset-form{
     padding: 15px 25px;
     color: white;
@@ -308,25 +335,30 @@ select:invalid { color: gray; }
     border: none;
 }
 
+/* NO SE USA EN EL INDEX */
 #price{
     height: 25px;
     font-size: 120%;
     color: red;
 }
 
+/* NO SE USA EN EL INDEX */
 .final-message{
     text-align: center;
     width: 100%;
 }
 
+/* NO SE USA EN EL INDEX */
 #no-resaltar{
     font-size: 80%;
 }
 
+/* NO SE USA EN EL INDEX */
 #resaltar{
     color: red;
 }
 
+/* Contenedor columna de 50% */
 .cincuenta-cd{
     margin-left: 10px;
     margin-right: 10px;
@@ -334,6 +366,7 @@ select:invalid { color: gray; }
     width: 50%;
 }
 
+/* Contenedor columna de 70% */
 .setenta-cd{
     margin-left: 10px;
     margin-right: 10px;
@@ -341,6 +374,7 @@ select:invalid { color: gray; }
     width: 70%;
 } 
 
+/* Contenedor columna de 30% */
 .treinta-cd{
     margin-left: 10px;
     margin-right: 10px;
@@ -348,6 +382,7 @@ select:invalid { color: gray; }
     width: 30%;
 }
 
+/* Contenedor columna de 100% */
 .cien-cd{
     margin-left: 10px;
     margin-right: 10px;
@@ -355,6 +390,7 @@ select:invalid { color: gray; }
     width: 100%;
 }
 
+/* Select de Departamento para facturacion */
 #departamento{
     width: 100%;
     height: 35px;
