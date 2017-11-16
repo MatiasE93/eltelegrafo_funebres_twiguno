@@ -29,7 +29,7 @@ class IndexController{
     }
     public function redirect($controlador="index",$accion="home",$params=array()){
         //header("Location:index.php?controller=".$controlador."&action=".$accion);
-        $url= '/eltelegrafo_funebres_twiguno/'.$controlador."/".$accion."/";
+        $url= URL_BASE.$controlador."/".$accion."/";
         foreach ($params as $key => $value) {
             $url.=$value."/";
         }
@@ -38,7 +38,7 @@ class IndexController{
 
     public function getUrl($controlador="index",
         $accion="home",$params=array()){
-        $url= '/eltelegrafo_funebres_twiguno/'.$controlador."/".$accion."/";
+        $url= URL_BASE.$controlador."/".$accion."/";
         foreach ($params as $key => $value) {
             $url.=$value."/";
         }
@@ -95,7 +95,7 @@ class IndexController{
                     $mensaje2="Anote el identificador para presentar a El Telégrafo en caso de problemas.";
                     $tpl = Template::getInstance();
                     $tpl->mostrar('advise_send.html', array(
-                            'url_base' => '/eltelegrafo_funebres_twiguno/',
+                            'url_base' => URL_BASE,
                             'titulo' => 'Formulario fúnebre',
                             'mensaje1' => $mensaje1,
                             'mensaje2' => $mensaje2,
@@ -108,7 +108,7 @@ class IndexController{
                     $idCode='';
                     $tpl = Template::getInstance();
                     $tpl->mostrar('advise_send.html', array(
-                            'url_base' => '/eltelegrafo_funebres_twiguno/',
+                            'url_base' => URL_BASE,
                             'titulo' => 'Formulario fúnebre',
                             'mensaje1' => $mensaje1,
                             'mensaje2' => $mensaje2,
@@ -122,7 +122,7 @@ class IndexController{
                 $idCode='';
                 $tpl = Template::getInstance();
                 $tpl->mostrar('advise_send.html', array(
-                        'url_base' => '/eltelegrafo_funebres_twiguno/',
+                        'url_base' => URL_BASE,
                         'titulo' => 'Formulario fúnebre',
                         'mensaje1' => $mensaje1,
                         'mensaje2' => $mensaje2,
@@ -134,7 +134,7 @@ class IndexController{
 
         $tpl = Template::getInstance();
         $tpl->mostrar('index_with_textarea.html', array(
-                'url_base' => '/eltelegrafo_funebres_twiguno/',
+                'url_base' => URL_BASE,
                 'titulo' => 'Formulario fúnebre'
             ));
     }
