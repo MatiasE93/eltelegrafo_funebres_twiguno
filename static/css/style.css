@@ -335,25 +335,25 @@ select:invalid { color: gray; }
     border: none;
 }
 
-/* NO SE USA EN EL INDEX */
+/* NO SE USA */
 #price{
     height: 25px;
     font-size: 120%;
     color: red;
 }
 
-/* NO SE USA EN EL INDEX */
+/* Contenedor donde se muestra el mensaje al enviar el aviso */
 .final-message{
     text-align: center;
     width: 100%;
 }
 
-/* NO SE USA EN EL INDEX */
+/* Hace mas pequeño la letra que muestra al enviar el aviso */
 #no-resaltar{
     font-size: 80%;
 }
 
-/* NO SE USA EN EL INDEX */
+/* Resalta el código identificador del aviso*/
 #resaltar{
     color: red;
 }
